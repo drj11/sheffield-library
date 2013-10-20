@@ -22,7 +22,7 @@ def data_rows():
 def data_tuples(rows):
     rows = iter(rows)
     for row in rows:
-        if row[0].value.startswith('Library'):
+        if row[0].value.startswith('Library branch'):
             break
     for row in rows:
         yield tuple((c.value for c in row))
